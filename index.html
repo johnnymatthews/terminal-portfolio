@@ -1,119 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Johnny Matthews</title>
+        <link rel="shortcut icon" type="image/icon" href="favicon.ico" />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johnny Matthews</title>
-    <link rel="shortcut icon" type="image/icon" href="favicon.ico" />
-    <link rel="stylesheet" href="style.css">
-</head>
+        <style>
+            @font-face {
+                font-family: Playfair Display;
+                src: url(playfairdisplay.ttf);
+                /* https://github.com/clauseggers/Playfair-Display */
+            }
+            body {
+                background: #f69400;
+                color: #171717;
+                font-family: "Playfair Display", serif;
+                font-size: 2em;
+                max-width: 45%;
+                margin: auto;
+                padding-top: 10%;
+            }
+            @media screen and (max-width: 600px) {
+                body {
+                    max-width: 90%;
+                }
+            }
+            h1 {
+                letter-spacing: -0.05em;
+            }
+            p {
+                letter-spacing: -0.02em;
+                line-height: 30px;
+                font-size: 24px;
+            }
+            a {
+                color: #754700;
+            }
+            img {
+                position: fixed;
+                right: 0px;
+                bottom: 0px;
+                max-width: 25%;
+            }
+        </style>
+    </head>
 
-<body>
-    <nav>
-        <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <about>
-            <p>Thanks for taking a look at this template! Everything's been written in plain-old HTML and CSS, there are no fancy frameworks here. There isn't any JavaScript. It's all been created from the ground up to keep things fast and easy to customize. The best place to start changing things is in the <code>style.css</code> file. There's a bunch of variables at the top of the file for things like colour and font-size.</p>
-            <p>This template was created by me, <a href="https://github.com/johnnymatthews">Johnny</a>. I've also used the incredible <a href="https://int10h.org/oldschool-pc-fonts/fontlist/"><code>int10h</code> font by Int10H</a>, and <a href="https://meyerweb.com/eric/tools/css/reset/">Meyerweb's Reset.css</a>. If you would rather not include these extras in your project, remove the top 9 lines from <code>style.css</code>. Keep in mind that this will alter how this site looks.</p>
-            <p>If you've got any questions or have any suggestions for this template, raise an <a
-                    href="https://github.com/johnnymatthews/terminal-portfolio/issues">issue</a> or make a <a
-                    href="https://github.com/johnnymatthews/terminal-portfolio/pulls">pull request</a> over on <a
-                    href="https://github.com/johnnymatthews/terminal-portfolio">GitHub</a>.</p>
-        </about>
-
-        <section>
-            <hr>
-            <h1>Text Tags</h1>
-            <h2>H2 Tag</h2>
-            <h3>H3 Tag</h3>
-            <h4>H4 Tag</h4>
-            <h5>H5 Tag</h5>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. <a href="#">This is a link</a>. Reprehenderit in voluptate velit esse cillum
-                dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum. <a href="#">This is a link</a>.</p>
-            <br>
-            <ul>
-                <li>Unorderded List</li>
-                <li>One</li>
-                <li>Two</li>
-                <li>Three</li>
-            </ul>
-            <br>
-            <ol>
-                <li>Ordered List</li>
-                <li>One</li>
-                <li>Two</li>
-                <li>Three</li>
-            </ol>
-            <br>
-            <h1>Code Blocks</h1>
-            <pre><code>/* int10h (CC BY-SA 4.0) https://int10h.org/oldschool-pc-fonts/fontlist/ */
-@font-face {
-    font-family: 'ibm';
-    src: url('ibm-ega8.ttf');
-}</code></pre>
-            <h1>Tables</h1>
-            <br>
-            <table>
-                <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
-                </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                </tr>
-                <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
-                </tr>
-                <tr>
-                    <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
-                    <td>Austria</td>
-                </tr>
-                <tr>
-                    <td>Island Trading</td>
-                    <td>Helen Bennett</td>
-                    <td>UK</td>
-                </tr>
-                <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                    <td>Canada</td>
-                </tr>
-                <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                    <td>Italy</td>
-                </tr>
-            </table>
-            <br>
-            <h1>Images</h1>
-            <img src="example.png">
-        </section>
-    </main>
-
-    <footer>
-        <p>This is the footer. Copyright Example Site.</p>
-    </footer>
-</body>
-
+    <body>
+        <h1>Johnny Matthews</h1>
+        <p>I learn stuff and teach other people that stuff. I explain techincal things. I work for Protocol Labs. I make crappy websites like this one. I write articles about things that interest me, but likely mean nothing to anyone else. I'm working to decentralize the web. I make terrible music no one should listen to. I drink unhealthy amount of Yorkshire tea. I'm aware that this is <i>a lot</i> of orange. I'm <a href="https://keybase.io/johnnymatthews">available for pints</a> if you need a drinking buddy.</p>
+        <img onclick="hide_john()" id="headshot" src="headshot.png">
+    </body>
+    <script>
+        function hide_john() {
+            console.log("yolo");
+            document.getElementById('headshot').style.visibility = 'hidden';
+        }
+    </script>
 </html>
