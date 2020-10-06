@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Playfair Display;
+    src: url(playfairdisplay.ttf);
+    /* https://github.com/clauseggers/Playfair-Display */
+}
+body {
+    background: #f69400;
+    color: #171717;
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+    max-width: 45%;
+    margin: auto;
+    padding-top: 25vh;
+}
+@media screen and (max-width: 600px) {
+    body {
+        max-width: 90%;
+    }
+}
+h1 {
+    letter-spacing: -0.05em;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 30px;
+    font-weight: 100;
+}
+p {
+    letter-spacing: -0.02em;
+    line-height: 30px;
+    font-size: 24px;
+}
+a {
+    color: #754700;
+}
+img {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    max-width: 25%;
+}
+h2, h3 { /* Squishes posts on blog index page. */
+    margin: 0px 0px 0px 0px;
+}
+.hidden-link {
+    text-decoration: none;
+    color: #171717;
+}
+.light-weight {
+    font-weight: 100;
+}
